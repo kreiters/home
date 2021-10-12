@@ -28,11 +28,21 @@
     cursor: pointer;
     transform: rotateY(20deg);
     transform: rotateY(-20deg);
-    
+  }
+  @keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+  .spin {
+    animation-name: spinning;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: linear;
   }
 </style>
 
 <h1>Hello, welcome to the Kreiter's Home Page!</h1>
 <div>
-<a href="/vitamins/index.html"><img alt="vitamin sign" src="vitamin sign5.png"></a>
+<a href="/vitamins/index.html"><img alt="vitamin sign" src="vitamin sign5.png" class="spin"></a>
 </div>
