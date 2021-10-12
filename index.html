@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
    }
   
   h1{
@@ -35,6 +36,8 @@
   @keyframes spinning {
     from { transform: rotate(0deg) }
     to { transform: rotate(30deg) }
+    from { transform: rotate(30deg) }
+    to { transform: rotate(0deg) }
   }
   .spin {
     animation-name: spinning;
