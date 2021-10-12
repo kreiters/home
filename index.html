@@ -35,14 +35,12 @@
   }
   @keyframes spinning {
     from { transform: rotate(0deg) }
-    to { transform: rotate(30deg) }
-    from { transform: rotate(30deg) }
-    to { transform: rotate(0deg) }
+    to { transform: rotate(10deg) }
   }
   .spin {
     animation-name: spinning;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1s;
     /* linear | ease | ease-in | ease-out | ease-in-out */
     animation-timing-function: linear;
   }
