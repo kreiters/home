@@ -34,15 +34,13 @@
     animation-timing-function: linear;
   }
   @keyframes spinning {
-    from { transform: rotateX(0deg) }
-    to { transform: rotateX(10deg) }
+    0%, 100% { transform: rotate(-30deg); }
+    20% {transform:scale(.95);}
+    50% { transform: rotate(30deg); }
+    80% {transform:scale(.95);}
   }
   .spin {
-    animation-name: spinning;
-    animation-duration: 3s;
-    animation-iteration-count: 1s;
-    /* linear | ease | ease-in | ease-out | ease-in-out */
-    animation-timing-function: linear;
+   animation: swing 2s infinite ease-in-out;
   }
 </style>
 
