@@ -51,6 +51,7 @@
 }*/
   @keyframes flying {
     0% {transform: translateX(100%);}
+    50% {transform: translateX(50%);}
     100% {transform: translateX(0);}
   }
 
@@ -59,12 +60,12 @@
   }
   .birds{
     position: absolute;
-    top: 100px;
-    right: 50px;
-    height: 50%;
-    width: 50%;
+    top: 50px;
+    right: 500px;
+    height: 20%;
+    width: 20%;
     animation-name: flying;
-    animation-duration: 20s;
+    animation-duration: 120s;
     animation-iteration-count: infinite;
     /* linear | ease | ease-in | ease-out | ease-in-out */
     animation-timing-function: linear;
