@@ -31,16 +31,16 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
     /* linear | ease | ease-in | ease-out | ease-in-out */
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
   }
   @keyframes spinning {
-    0%, 100% { transform: rotate(-7deg); }
+    0%, 100% { transform: rotate(-4deg); }
     /*20% {transform:scale(.95);}*/
-    50% { transform: rotate(7deg); }
+    50% { transform: rotate(4deg); }
     /*80% {transform:scale(.95);}*/
   }
   .spin {
-   animation: swing 1s infinite ease-in-out;
+   animation: swing 2s infinite ease-in-out;
   }
 </style>
 
